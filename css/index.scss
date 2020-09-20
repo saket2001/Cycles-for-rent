@@ -25,6 +25,7 @@ body {
 .main-section {
   background-image: url(/images/background.jpg);
   background-blend-mode: color;
+   background-color: rgb(85, 57, 57);
 }
 //section1
 .about-us {
@@ -59,6 +60,7 @@ body {
   @include flex(row, space-evenly);
   padding: 1%;
   width: 100%;
+
   .heading {
     @include heading();
     color: whitesmoke;
