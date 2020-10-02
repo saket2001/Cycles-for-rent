@@ -23,7 +23,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: transparent;
 }
 
 .nav-container .logo {
@@ -75,7 +75,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #dad3d3;
-  background-image: url("/Registration_for_cycles/background.jpg");
+  background-image: url("../background.jpg");
   background-size: cover;
 }
 

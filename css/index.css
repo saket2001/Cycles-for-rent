@@ -30,7 +30,7 @@
     background: #82978a;
   }
   .header .welcome-page {
-    background-image: url("/images/cover2.jpg");
+    background-image: url("../images/cover2.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -1196,7 +1196,7 @@ body {
   .review-section .review-box .lower-side .content-box {
     width: 100%;
     font-size: 14px;
-    color: #1a1515;
+    color: black;
   }
   .contact-us-section {
     padding: 3%;
