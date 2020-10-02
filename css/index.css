@@ -4,12 +4,12 @@
 
 .header .welcome-page {
   height: 95vh;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #553939;
+  background-color: #c9ced6;
 }
 
 .header .welcome-page .welcome-text {
@@ -302,14 +302,14 @@ body {
 }
 
 .main-section {
-  background-image: url(/images/background.jpg);
-  background-blend-mode: color;
   background-color: #553939;
+  background-image: url("../images/background.jpg");
+  background-blend-mode: color;
 }
 
 .about-us {
   padding: 2%;
-  background: lightgoldenrodyellow;
+  background: rgba(235, 233, 233, 0.76);
   width: 100%;
   height: 100%;
   line-height: normal;
@@ -344,7 +344,7 @@ body {
 
 .about-us .text-container > .left-container-text {
   position: relative;
-  top: 200px;
+  top: 100px;
   width: 50%;
   font-size: 25px;
   text-align: left;
@@ -494,6 +494,397 @@ body {
   color: rgba(255, 255, 255, 0.753);
 }
 
+.pricing-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #29293b;
+  padding-bottom: 5%;
+}
+
+.pricing-section-container .heading {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  height: 80px;
+  color: white;
+}
+
+.pricing-section-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin: 2%;
+  text-align: center;
+  color: white;
+  border-radius: 0px;
+  background: #334047;
+  -webkit-box-shadow: 10px 10px 20px #171d20,  -10px -10px 20px #181d1f;
+          box-shadow: 10px 10px 20px #171d20,  -10px -10px 20px #181d1f;
+}
+
+.pricing-section-container .box .uppersection {
+  width: 100%;
+}
+
+.pricing-section-container .box .uppersection .box-heading {
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 50px;
+}
+
+.pricing-section-container .box .uppersection .pricing-price {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+}
+
+.pricing-section-container .box .uppersection .extra-price {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.pricing-section-container .box .lowersection {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 250px;
+}
+
+.pricing-section-container .box .lowersection .box-content {
+  width: 100%;
+  padding: 2%;
+  line-height: 1.5rem;
+}
+
+.pricing-section-container .box .lowersection .box-content > p {
+  padding: 2%;
+  margin: 2% 3%;
+  text-align: left;
+  line-height: 40px;
+}
+
+.pricing-section-container .box .lowersection .btn-box {
+  width: 100%;
+  margin: 2% 0;
+}
+
+.pricing-section-container .box .lowersection .btn-box > button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 200;
+  outline: none;
+  border: 1px solid lightseagreen;
+  padding: 2%;
+}
+
+.pricing-section-container .box .lowersection .btn-box > button:hover {
+  background-color: #ffffffcb;
+  color: black;
+}
+
+.pricing-section-container #box1 .uppersection {
+  background-color: rgba(178, 54, 32, 0.747);
+}
+
+.pricing-section-container #box1 .btn-box > button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 200;
+  outline: none;
+  border: 1px solid lightseagreen;
+  background-color: rgba(178, 54, 32, 0.747);
+  color: white;
+}
+
+.pricing-section-container #box1 .btn-box > button:hover {
+  background-color: #ffffffcb;
+  color: black;
+}
+
+.pricing-section-container #box2 .uppersection {
+  background-color: #2d38cf;
+}
+
+.pricing-section-container #box2 .btn-box > button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 200;
+  outline: none;
+  border: 1px solid lightseagreen;
+  background-color: #2d38cf;
+  color: white;
+}
+
+.pricing-section-container #box2 .btn-box > button:hover {
+  background-color: #ffffffcb;
+  color: black;
+}
+
+.pricing-section-container #box3 .uppersection {
+  background-color: #1d8f89;
+}
+
+.pricing-section-container #box3 .btn-box > button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 200;
+  outline: none;
+  border: 1px solid lightseagreen;
+  background-color: #1d8f89;
+  color: white;
+}
+
+.pricing-section-container #box3 .btn-box > button:hover {
+  background-color: #ffffffcb;
+  color: black;
+}
+
+.review-section {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #29293b;
+}
+
+.review-section .heading {
+  width: 100%;
+}
+
+.review-section .heading .small-text {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: smaller;
+  padding: 1%;
+  margin: 0 auto;
+  width: 30%;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.review-section .heading .big-text {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.review-section .review-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 20%;
+  margin: 1%;
+  height: auto;
+  padding: 0;
+  border-radius: 0px;
+  background-color: transparent;
+  -webkit-box-shadow: 10px 10px 20px #070808,  -10px -10px 20px #202427;
+          box-shadow: 10px 10px 20px #070808,  -10px -10px 20px #202427;
+}
+
+.review-section .review-box .upper-side {
+  background-color: rgba(33, 22, 190, 0.986);
+  height: 90px;
+  padding: 2%;
+  margin: 0;
+}
+
+.review-section .review-box .upper-side > img {
+  width: 90px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.review-section .review-box .lower-side {
+  width: 100%;
+  padding: 2%;
+  margin: 0;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.review-section .review-box .lower-side .name-box {
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 2%;
+  font-size: 16px;
+}
+
+.review-section .review-box .lower-side .content-box {
+  width: 100%;
+  font-weight: lighter;
+  color: rgba(41, 32, 32, 0.712);
+  padding: 2% 0;
+}
+
+.review-section .review-box .lower-side .stars-box {
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.review-section .review-box .lower-side .stars-box > .stars {
+  color: blue;
+}
+
+.review-section .review-box .lower-side .stars-box > .empty-stars {
+  color: #bfbfbf;
+}
+
+.contact-us-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 2%;
+  padding-bottom: 4%;
+  background-color: #29293b;
+  color: whitesmoke;
+}
+
+.contact-us-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: center;
+  width: auto;
+}
+
+.contact-us-section .container .heading {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: lighter;
+  width: auto;
+  text-align: left;
+  padding: 2%;
+  margin: 0;
+}
+
+.contact-us-section .container p {
+  padding: 2% 0;
+  color: rgba(255, 255, 255, 0.719);
+  width: 55%;
+}
+
+.contact-us-section .container > input[type=text] {
+  margin: 2%;
+  padding: 2%;
+  font-size: 22px;
+  width: 500px;
+  outline: blue;
+  color: whitesmoke;
+  border: none;
+  background-color: #141212;
+}
+
+.contact-us-section .container > input[type=email] {
+  margin: 2%;
+  padding: 2%;
+  font-size: 22px;
+  width: 500px;
+  outline: blue;
+  border: none;
+  color: whitesmoke;
+  background-color: #141212;
+}
+
+.contact-us-section .container > textarea {
+  margin: 2%;
+  padding: 2%;
+  font-size: 22px;
+  outline: blue;
+  border: none;
+  color: whitesmoke;
+  background-color: #141212;
+}
+
 .follow-us-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,7 +900,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: #f5fbff;
+  background: rgba(235, 233, 233, 0.76);
 }
 
 .follow-us-section .heading {
@@ -543,19 +934,18 @@ body {
 }
 
 .follow-us-section .section-container .icons {
-  margin: 1%;
+  margin: 2% 4%;
   padding: 1% 3%;
-  border-radius: 35px;
-  background: #f5fbff;
-  -webkit-box-shadow: -16px 16px 32px #d0d5d9, 16px -16px 32px #ffffff;
-          box-shadow: -16px 16px 32px #d0d5d9, 16px -16px 32px #ffffff;
+  border-radius: 20%;
+  background: #cecaca;
+  -webkit-box-shadow: 30px 30px 60px #9b9898,  -20px -20px 30px #fffdfd;
+          box-shadow: 30px 30px 60px #9b9898,  -20px -20px 30px #fffdfd;
 }
 
 .follow-us-section .section-container .icons > i {
   font-size: 100px;
-  padding: 1%;
+  padding: 4%;
   border: none;
-  outline: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -709,6 +1099,135 @@ body {
   }
   .follow-us-section .section-container .icons > i {
     font-size: 50px;
+  }
+  .pricing-section-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pricing-section-container .heading {
+    font-size: 20px;
+  }
+  .pricing-section-container .box {
+    width: 80%;
+  }
+  .pricing-section-container .box .uppersection {
+    width: 100%;
+  }
+  .pricing-section-container .box .uppersection .box-heading {
+    font-size: 18px;
+  }
+  .pricing-section-container .box .uppersection .pricing-price {
+    font-size: 20px;
+  }
+  .pricing-section-container .box .lowersection .box-content > p {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .review-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review-section .heading {
+    width: 100%;
+  }
+  .review-section .heading .small-text {
+    width: 100%;
+    font-size: 12px;
+  }
+  .review-section .heading .big-text {
+    display: block;
+    clear: both;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+  }
+  .review-section .review-box {
+    width: 60%;
+    padding: 0;
+    margin: 2% 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review-section .review-box .upper-side {
+    width: 100%;
+  }
+  .review-section .review-box .upper-side > img {
+    width: 90px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+  }
+  .review-section .review-box .lower-side {
+    width: 100%;
+  }
+  .review-section .review-box .lower-side .content-box {
+    width: 100%;
+    font-size: 14px;
+    color: #1a1515;
+  }
+  .contact-us-section {
+    padding: 3%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-us-section .heading {
+    font-size: 15px;
+    text-align: center;
+    padding: 1% 2%;
+  }
+  .contact-us-section .container p {
+    padding: 2%;
+    width: 100%;
+    font-size: 16px;
+  }
+  .contact-us-section .container > input[type=text] {
+    padding: 2%;
+    font-size: 15px;
+    width: 300px;
+  }
+  .contact-us-section .container > input[type=email] {
+    padding: 2%;
+    font-size: 15px;
+    width: 300px;
+  }
+  .contact-us-section .container > textarea {
+    padding: 2%;
+    font-size: 15px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=index.css.map */

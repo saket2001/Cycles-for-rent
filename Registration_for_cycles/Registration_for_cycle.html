@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="Registration_for_cycle.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Get Cycle or Cycles Now</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#">Cycles for <span class="special">Rent</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/log in page/sign-up_page.html">Sign up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/log in page/log-in_page.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Cycles For Rent
+            </div>
+            <div class="nav-items">
+                <a href="/index.html" class="nav-links">
+                    Home
+                </a>
+                <a href="/log in page/log-in_page.html" class="nav-links">
+                    Sign In
+                </a>
+                <a href="/index.html" class="nav-links">
+                    Contact Us
+                </a>
+            </div>
         </div>
-      </nav>
+    </nav>
+    <div class="section-container">
+        <div class="container">
+            <h2 class="heading">
+               Step 2: REGISTER
+            </h2>
+            <p>
+                Create an account , its Free.Fill the details to get connected with us
+            </p>
+            <br />
+            <div class="form">
+                <div class="namediv">
+                    <input type="text" name="" id="" placeholder="First name" /> 
+                    <input type="text" name="" id="" placeholder="Last name" />
+                </div>
+                <input type="email" name="" id="" placeholder="email">
+                <input type="password" name="" id="" placeholder="password">
+                <div class="rules">
+                    <p>
+                    <ul>
+                        <li>Min 9 and Max 20 words </li>
+                        <li>Include 2-4 special symbols
+                            i.e $,&,@... </li>
+                        <li>2-3 Capital words & 3-4 numbers</li>
+                    </ul>
+                    </p>
+                </div>
+                <input type="password" name="" id="" placeholder="Confirm password">
+                <div class="extradetails">
+                    <input type="text" name="" id="" placeholder="Your phone no">
+                    <input type="text" name="" id="" placeholder="Age">
+                </div>  
+                <textarea name="" id="" cols="30" rows="5" placeholder="Address"></textarea>
+                <div class="extradetails2">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" id="male" >
+                    <label for="Female">Female</label>
+                    <input type="radio" value="female" name="gender" id="Female">
+                    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="india">India</label>
+                    <input type="radio" name="country" value="india" id="india" >
+                     &nbsp;
+                    <input type="text" name="" id="" placeholder="Other country">
+                </div>  
+                <div class="extradetails3">
+                    <input type="checkbox" name="" id="">
+                      I agree to the Terms And Conditions of Company
+                </div> 
+                <input type="submit" value="submit">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
