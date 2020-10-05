@@ -1,32 +1,82 @@
 @mixin buttons() {
-    width: 100px;
-    height: 35px;
+    width: fit-content;
+    height: auto;
     text-transform: uppercase;
     background-color: transparent;
     font-family: sans-serif;
     font-weight: bold;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 2%;
+    border-radius: 100px;
+    &:hover{
+        border: 2px solid white;
+    }
 }
 .header{
       background: rgb(130, 151, 138);
     .welcome-page{
-        height: 95vh;
-        background-image: url("/images/cover.jpg");
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+        align-items: center;
+        //
+        height: 90vh;
+        background-image: url("../images/cover3.jpg");
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: rgb(85, 57, 57);
-        .welcome-text{
-            color: black;
+        background-color: rgb(201, 206, 214);
+        .welcome-container{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content:flex-end;
+            height: auto;
+            width: auto;
+            margin: 1%;
+            padding: 1% 0;
             position: relative;
-            top: 200px;
-            font-size: 60px;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            width: 30%; 
-            height: 300px;
-            line-height: 50px;
-            padding-left: 2%;
-            padding: 1%;
+            left: 830px;
+            top: 100px;
+            line-height: 30px;
+            background-color: rgba(255, 255, 255, 0.322);
+            .welcome-text{
+                font-size: 60px;
+                padding: 1%;
+                margin: 1% 2%;
+                height: auto;
+                width: 100%;
+                line-height: 60px;
+                text-align: left;
+                color: white;
+                font-weight: bold;
+            }
+            .welcome-btn-group{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: start;
+                padding: 1%;
+                margin: 1% 2%;
+                width: auto;
+                .welcome-btn{
+                    @include buttons();
+                    background-color: rgba(221, 84, 21, 0.747);
+                    margin: 2%;
+                    width: 170px;
+                    >a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 15px;
+                    }
+                    &:last-child{
+                        background-color: rgba(44, 33, 109, 0.801);
+                    }
+                }
+            }
+                        
         }
     }
 }
@@ -34,17 +84,34 @@
     .header{
       background: rgb(130, 151, 138);
     .welcome-page{
-        background-image: url("/images/cover2.jpg");
+        background-image: url("../images/cover2.jpg");
         background-size: cover;
         background-position: center;
-        .welcome-text{
-            top: 180px;
-            font-size: 35px;
-            text-align: center;
-            line-height: 1.9rem;
-            width: 100%;
-            color: white;
-            padding: 3%;
+              .welcome-container{
+            justify-content:flex-start;
+            left: 80px;
+            top: -150px;
+            padding: 2%;
+            line-height: 20px;
+            background-color:rgba(255, 255, 255, 0.493);
+            .welcome-text{
+                color: black;
+                font-size: 26px;
+                line-height: 30px;
+            }
+            .welcome-btn-group{
+                align-items: start;
+                padding: 1%;
+                margin: 1% 2%;
+                width: auto;
+                .welcome-btn{
+                    width: 100px;
+                    >a{
+                       font-size: 12px;
+                    }
+                }
+            }
+                        
         }
     }
 }
