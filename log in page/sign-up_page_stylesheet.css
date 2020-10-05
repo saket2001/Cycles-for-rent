@@ -144,4 +144,12 @@ input:hover{
     .form-container{
         width: 90%;
     }
+    input[type=text]{
+    width: 200px;
+    border: 1px solid rgb(121, 105, 214);
+    }
+input[type=password]{
+    width: 200px;
+    border: 1px solid rgb(121, 105, 214);
+    }
 }

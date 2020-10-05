@@ -1,9 +1,13 @@
 @import "header";
 @import "simple_responsive_navbar";
 @import "footer";
+@font-face{
+  font-family: oswald;
+  src: url("/Oswald-VariableFont_wght.ttf");
+}
 body {
   font-size: 100%;
-  font-family: sans-serif;
+  font-family: oswald,sans-serif;
   line-height: 1.5rem;
 }
 @mixin flex($flexdirection, $position) {
@@ -88,10 +92,9 @@ $secondary-bg-color:rgb(41, 41, 59);
     @include flex(column, center);
     width: 30%;
     height: auto;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
     align-items: center;
     padding: 1% 3%;
+    background: rgba(111, 168, 214, 0.74);
     .info-heading {
       font-size: 35px;
       margin: 1% auto;
@@ -106,7 +109,7 @@ $secondary-bg-color:rgb(41, 41, 59);
     }
     .section-text {
       width: 90%;
-      color: rgba(255, 255, 255, 0.808);
+      color: rgb(255, 255, 255);
       margin: 1% auto;
       font-size: 20px;
       padding: 1%;
@@ -119,7 +122,6 @@ $secondary-bg-color:rgb(41, 41, 59);
   width: 100%;
   height: 100%;
   line-height: normal;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   //background-color: $secondary-bg-color;
   .text-container {
     display: flex;
@@ -140,11 +142,11 @@ $secondary-bg-color:rgb(41, 41, 59);
         > .heading {
           @include heading();
           text-align: left;
-          color: white;
+          color:rgb(136, 255, 0);
         }
         > .text {
           font-size: 18px;
-          color: rgba(255, 255, 255, 0.753);
+          color: rgb(255, 255, 255);
         }
       }
     }
@@ -320,6 +322,7 @@ $secondary-bg-color:rgb(41, 41, 59);
         font-weight: lighter;
         color: rgba(41, 32, 32, 0.712);
         padding: 2% 0;
+        line-height:30px;
       }
       .stars-box{
         width: 100%;
@@ -358,9 +361,10 @@ $secondary-bg-color:rgb(41, 41, 59);
     margin: 0;
   }
     p{
-      padding: 2% 0;
+      padding: 2%;
       color: rgba(255, 255, 255, 0.719);
       width: 55%;
+      text-align: left;
     }
     >input[type=text]{
       margin: 2%;
@@ -368,9 +372,8 @@ $secondary-bg-color:rgb(41, 41, 59);
       font-size: 22px;
       width: 500px;
       outline: blue;
-      color: whitesmoke;
       border: none;
-      background-color: rgb(20, 18, 18);
+      background-color: rgb(255, 255, 255);
     }
     >input[type=email]{
       margin: 2%;
@@ -379,8 +382,7 @@ $secondary-bg-color:rgb(41, 41, 59);
       width: 500px;
       outline: blue;
       border: none;
-       color: whitesmoke;
-      background-color:rgb(20, 18, 18);
+      background-color:rgb(255, 255, 255);
     }
     >textarea{
       margin: 2%;
@@ -388,8 +390,7 @@ $secondary-bg-color:rgb(41, 41, 59);
       font-size: 22px;
       outline: blue;
       border: none;
-       color: whitesmoke;
-      background-color: rgb(20, 18, 18);
+      background-color: rgb(255, 255, 255);
     }
   }
 }
@@ -398,7 +399,7 @@ $secondary-bg-color:rgb(41, 41, 59);
   @include flex(column, center);
   align-items: center;
   width: 100%;
-  background: $primary-bg-color;
+  background:rgb(216, 220, 221);
   .heading {
     @include heading();
   }
@@ -411,9 +412,9 @@ $secondary-bg-color:rgb(41, 41, 59);
       margin: 2% 4%;
       padding: 1% 3%;
       border-radius: 20%;
-      background: #cecaca;
+      background: #dfdbdb;
       box-shadow:  30px 30px 60px #9b9898, 
-             -20px -20px 30px #fffdfd;
+             -20px -20px 30px #fffdfdd5;
       > i {
         font-size: 100px;
         padding: 4%;
@@ -599,17 +600,17 @@ $secondary-bg-color:rgb(41, 41, 59);
     >input[type=text]{
       padding: 2%;
       font-size: 15px;
-      width: 300px;
+      width: 200px;
     }
     >input[type=email]{
       padding: 2%;
       font-size: 15px;
-      width: 300px;
+      width: 200px;
     }
     >textarea{
       padding: 2%;
       font-size: 15px;
-      width: 300px;
+      width: 220px;
     }
   }
 }

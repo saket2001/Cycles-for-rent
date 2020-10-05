@@ -3,8 +3,21 @@
 }
 
 .header .welcome-page {
-  height: 95vh;
-  background-image: url("../images/cover.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  background-image: url("../images/cover3.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,17 +25,90 @@
   background-color: #c9ced6;
 }
 
-.header .welcome-page .welcome-text {
-  color: black;
+.header .welcome-page .welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+  width: auto;
+  margin: 1%;
+  padding: 1% 0;
   position: relative;
-  top: 200px;
+  left: 830px;
+  top: 100px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+.header .welcome-page .welcome-container .welcome-text {
   font-size: 60px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  width: 30%;
-  height: 300px;
-  line-height: 50px;
-  padding-left: 2%;
   padding: 1%;
+  margin: 1% 2%;
+  height: auto;
+  width: 100%;
+  line-height: 60px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+
+.header .welcome-page .welcome-container .welcome-btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 1%;
+  margin: 1% 2%;
+  width: auto;
+}
+
+.header .welcome-page .welcome-container .welcome-btn-group .welcome-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 2%;
+  border-radius: 100px;
+  background-color: rgba(221, 84, 21, 0.747);
+  margin: 2%;
+  width: 170px;
+}
+
+.header .welcome-page .welcome-container .welcome-btn-group .welcome-btn:hover {
+  border: 2px solid white;
+}
+
+.header .welcome-page .welcome-container .welcome-btn-group .welcome-btn > a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.header .welcome-page .welcome-container .welcome-btn-group .welcome-btn:last-child {
+  background-color: rgba(44, 33, 109, 0.801);
 }
 
 @media only screen and (max-width: 600px) {
@@ -34,14 +120,34 @@
     background-size: cover;
     background-position: center;
   }
-  .header .welcome-page .welcome-text {
-    top: 180px;
-    font-size: 35px;
-    text-align: center;
-    line-height: 1.9rem;
-    width: 100%;
-    color: white;
-    padding: 3%;
+  .header .welcome-page .welcome-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    left: 80px;
+    top: -150px;
+    padding: 2%;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.493);
+  }
+  .header .welcome-page .welcome-container .welcome-text {
+    color: black;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .header .welcome-page .welcome-container .welcome-btn-group {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 1%;
+    margin: 1% 2%;
+    width: auto;
+  }
+  .header .welcome-page .welcome-container .welcome-btn-group .welcome-btn {
+    width: 100px;
+  }
+  .header .welcome-page .welcome-container .welcome-btn-group .welcome-btn > a {
+    font-size: 12px;
   }
 }
 
@@ -295,9 +401,14 @@ footer .creater-info-board {
   }
 }
 
+@font-face {
+  font-family: oswald;
+  src: url("/Oswald-VariableFont_wght.ttf");
+}
+
 body {
   font-size: 100%;
-  font-family: sans-serif;
+  font-family: oswald,sans-serif;
   line-height: 1.5rem;
 }
 
@@ -392,12 +503,11 @@ body {
           justify-content: center;
   width: 30%;
   height: auto;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1% 3%;
+  background: rgba(111, 168, 214, 0.74);
 }
 
 .info-about-company .board-container .info-heading {
@@ -416,7 +526,7 @@ body {
 
 .info-about-company .board-container .section-text {
   width: 90%;
-  color: rgba(255, 255, 255, 0.808);
+  color: white;
   margin: 1% auto;
   font-size: 20px;
   padding: 1%;
@@ -427,7 +537,6 @@ body {
   width: 100%;
   height: 100%;
   line-height: normal;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .process-container .text-container {
@@ -486,12 +595,12 @@ body {
   font-style: italic;
   font-weight: bold;
   text-align: left;
-  color: white;
+  color: #88ff00;
 }
 
 .process-container .text-container > .left-container > .step-container > .text {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.753);
+  color: white;
 }
 
 .pricing-section-container {
@@ -779,6 +888,7 @@ body {
   font-weight: lighter;
   color: rgba(41, 32, 32, 0.712);
   padding: 2% 0;
+  line-height: 30px;
 }
 
 .review-section .review-box .lower-side .stars-box {
@@ -848,9 +958,10 @@ body {
 }
 
 .contact-us-section .container p {
-  padding: 2% 0;
+  padding: 2%;
   color: rgba(255, 255, 255, 0.719);
   width: 55%;
+  text-align: left;
 }
 
 .contact-us-section .container > input[type=text] {
@@ -859,9 +970,8 @@ body {
   font-size: 22px;
   width: 500px;
   outline: blue;
-  color: whitesmoke;
   border: none;
-  background-color: #141212;
+  background-color: white;
 }
 
 .contact-us-section .container > input[type=email] {
@@ -871,8 +981,7 @@ body {
   width: 500px;
   outline: blue;
   border: none;
-  color: whitesmoke;
-  background-color: #141212;
+  background-color: white;
 }
 
 .contact-us-section .container > textarea {
@@ -881,8 +990,7 @@ body {
   font-size: 22px;
   outline: blue;
   border: none;
-  color: whitesmoke;
-  background-color: #141212;
+  background-color: white;
 }
 
 .follow-us-section {
@@ -900,7 +1008,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: rgba(235, 233, 233, 0.76);
+  background: #d8dcdd;
 }
 
 .follow-us-section .heading {
@@ -937,9 +1045,9 @@ body {
   margin: 2% 4%;
   padding: 1% 3%;
   border-radius: 20%;
-  background: #cecaca;
-  -webkit-box-shadow: 30px 30px 60px #9b9898,  -20px -20px 30px #fffdfd;
-          box-shadow: 30px 30px 60px #9b9898,  -20px -20px 30px #fffdfd;
+  background: #dfdbdb;
+  -webkit-box-shadow: 30px 30px 60px #9b9898,  -20px -20px 30px #fffdfdd5;
+          box-shadow: 30px 30px 60px #9b9898,  -20px -20px 30px #fffdfdd5;
 }
 
 .follow-us-section .section-container .icons > i {
@@ -1217,17 +1325,17 @@ body {
   .contact-us-section .container > input[type=text] {
     padding: 2%;
     font-size: 15px;
-    width: 300px;
+    width: 200px;
   }
   .contact-us-section .container > input[type=email] {
     padding: 2%;
     font-size: 15px;
-    width: 300px;
+    width: 200px;
   }
   .contact-us-section .container > textarea {
     padding: 2%;
     font-size: 15px;
-    width: 300px;
+    width: 220px;
   }
 }
 /*# sourceMappingURL=index.css.map */
