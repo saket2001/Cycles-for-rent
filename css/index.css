@@ -16,6 +16,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   height: 90vh;
   background-image: url("../images/cover3.jpg");
   background-attachment: scroll;
@@ -37,23 +38,23 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: auto;
-  width: auto;
+  width: 500px;
   margin: 1%;
   padding: 1% 0;
   position: relative;
-  left: 830px;
-  top: 100px;
-  line-height: 30px;
+  left: 700px;
+  top: 50px;
+  line-height: 10px;
   background-color: rgba(255, 255, 255, 0.322);
 }
 
 .header .welcome-page .welcome-container .welcome-text {
-  font-size: 60px;
+  font-size: 40px;
   padding: 1%;
   margin: 1% 2%;
   height: auto;
   width: 100%;
-  line-height: 60px;
+  line-height: 40px;
   text-align: left;
   color: white;
   font-weight: bold;
@@ -119,16 +120,18 @@
     background-image: url("../images/cover2.jpg");
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
   .header .welcome-page .welcome-container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    left: 80px;
+    left: 0;
     top: -150px;
     padding: 2%;
     line-height: 20px;
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: rgba(200, 215, 236, 0.993);
+    opacity: 0.8;
   }
   .header .welcome-page .welcome-container .welcome-text {
     color: black;
@@ -142,6 +145,7 @@
     padding: 1%;
     margin: 1% 2%;
     width: auto;
+    opacity: 1;
   }
   .header .welcome-page .welcome-container .welcome-btn-group .welcome-btn {
     width: 100px;
@@ -568,6 +572,7 @@ body {
 
 .process-container .text-container > .left-container {
   width: 50%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,7 +1139,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 80%;
+    width: 70%;
     border-radius: 10px;
     margin: 1%;
   }
@@ -1150,13 +1155,15 @@ body {
     text-align: left;
   }
   .process-container {
-    padding: 5%;
+    padding: 1%;
+    height: auto;
   }
   .process-container .text-container > .right-container-heading {
     font-size: 30px;
   }
   .process-container .text-container > .left-container {
     width: 50%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1227,7 +1234,7 @@ body {
     font-size: 20px;
   }
   .pricing-section-container .box {
-    width: 80%;
+    width: 70%;
   }
   .pricing-section-container .box .uppersection {
     width: 100%;
@@ -1279,7 +1286,7 @@ body {
     width: 100%;
   }
   .review-section .review-box {
-    width: 60%;
+    width: 70%;
     padding: 0;
     margin: 2% 0;
     -webkit-box-pack: center;
