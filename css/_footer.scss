@@ -1,0 +1,62 @@
+@mixin flex($flexdirection) {
+    display: flex;
+    flex-flow: $flexdirection wrap;
+    justify-content: center;
+}
+/* common styling for all links  */
+.common-links{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    background: rgb(12, 7, 7);
+    @include flex(column);
+    color: white;
+    >.footer-content{
+        @include flex(row);
+        align-items: baseline;
+        >.footer-row{
+            @include flex(column);
+            width: 20%;
+            margin: 1%;
+            ul>li{
+                list-style-type: none;
+            }
+        }
+    }
+    >.footer-content2{
+        padding: 2%;
+         @include flex(row);
+         justify-content: space-between;
+    }
+    .creater-info-board{
+        display: block;
+        height: 20px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:500px){
+    footer{
+        height: auto;
+        @include flex(column);
+        align-items: center;
+        justify-content: space-around;
+    >.footer-content{
+        padding: 2%;
+        >.footer-row{
+            padding: 1%;
+            width: 100%;
+            font-size: 18px;
+            border-bottom: 1px solid gray;
+        }
+    }
+    >.creater-info-board{
+        height: auto;
+        text-align: left;
+        padding: 2%;
+    }
+}
+}

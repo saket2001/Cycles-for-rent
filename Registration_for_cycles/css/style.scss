@@ -1,0 +1,199 @@
+@import"simple_dropdown_navbar";
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(218, 211, 211);
+    background-image: url("../background.jpg");
+    background-size: cover;
+}
+//
+@mixin flex($flexdirection) {
+    display: flex;
+    flex-flow: $flexdirection wrap;
+    justify-content: center;
+    align-items: center;
+}
+//
+.section-container{
+    @include flex(row);
+    justify-content: left;
+    padding: 2%;
+    .container{
+        //background-color: aqua;
+        @include flex(column);
+        padding: 1%;
+        width: 80%;
+        .heading{
+            display: block;
+            font-size: 50px;
+            width: 100%;
+            padding:1%;
+        }
+        p{
+            font-size: 22px;
+            margin: 1%;
+            width: 100%;
+            padding: 1%;
+        }
+        .form{
+            @include flex(column);
+            width: 100%;
+            justify-content: left;
+            align-items: flex-start;
+            .namediv{
+                width: 80%;
+            >input[type=text]{
+            width: 280px;
+            padding: 1%;
+            margin: 1%;
+            font-size: 20px;
+            border: 2px solid blue;
+            }
+        }
+        >textarea{
+            width: 55%;
+            padding: 1%;
+            margin: 1%;
+            font-size: 20px;
+            border: 2px solid blue;
+            }
+        >input[type=email]{
+            width: 55%;
+            padding: 1%;
+            margin: 1%;
+            font-size: 20px;
+            border: 2px solid blue;
+        }
+        >input[type=password]{
+            width: 55%;
+            padding: 1%;
+            margin: 1%;
+            font-size: 20px;
+            border: 2px solid blue;
+        }
+         >input[type=submit]{
+            width: 20%;
+            padding: 1%;
+            margin: 1%;
+            font-size: 20px;
+            border: 2px solid blue;
+            background-color:transparent;
+            &:hover{
+                background-color: blue;
+                color: white;
+            }
+        }
+        .rules{
+            padding: 0 2%;
+            font-size: 20px;
+            >ul>li{
+                list-style-type: circle;
+                list-style-position: inside;
+            }
+        }
+        .extradetails{
+            @extend .namediv;
+        }
+        .extradetails2{
+            @extend .namediv;
+            label{
+                font-size: 20px;
+            }
+           >input[type=radio]{
+               width: 25px;
+               height: 20px;
+               background-color: blue;
+           }
+        }
+        .extradetails3{
+            width: auto;
+            padding: 1%;
+            font-size: 20px;
+            >input[type=checkbox]{
+               width: 25px;
+               height: 20px;
+               background-color: blue;
+           }
+        }
+        }
+    }
+}
+//
+@media only screen and (max-width:500px){
+    .section-container{
+    padding: 2%;
+    height: auto;
+    .container{
+        justify-content: center;
+        @include flex(column);
+        padding: 1%;
+        width: 100%;
+        .heading{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .form{
+            width: 100%;
+            .namediv{
+            width: 100%;
+            >input[type=text]{
+            width: 150px;
+            margin: 2%;
+            font-size: 18px;
+            border: 1px solid black;
+            }
+        }
+        >textarea{
+            width: 80%;
+            margin: 2%;
+            font-size: 18px;
+             border: 1px solid black;
+            }
+        >input[type=email]{
+            width: 80%;
+            margin: 2%;
+            font-size: 18px;
+            border: 1px solid black;
+        }
+        >input[type=password]{
+            width: 80%;
+            margin: 2%;
+            font-size: 18px;
+             border: 1px solid black;
+        }
+         >input[type=submit]{
+            width: 50%;
+            padding: 1%;
+            margin: 1%;
+            font-size: 18px;
+            border: 1px solid black;
+        }
+        .rules{
+            padding: 0 2%;
+            font-size: 16px;
+        }
+        .extradetails{
+            width: 100%;
+        }
+        .extradetails2{
+            label{
+                font-size: 18px;
+            }
+           >input[type=radio]{
+               width: 18px;
+               height: 18px;
+           }
+        }
+        .extradetails3{
+            font-size: 18px;
+            >input[type=checkbox]{
+               width: 18px;
+               height: 18px;
+           }
+        }
+        }
+    }
+}
+}
