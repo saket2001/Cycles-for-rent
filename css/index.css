@@ -10,19 +10,20 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 90vh;
+  width: auto;
   background-image: url("../images/cover3.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: scroll;
   background-color: #c9ced6;
 }
 
@@ -34,16 +35,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   height: auto;
-  width: 500px;
+  width: auto;
   margin: 1%;
   padding: 1% 0;
-  position: relative;
-  left: 700px;
-  top: 50px;
   line-height: 10px;
   background-color: rgba(255, 255, 255, 0.322);
 }
@@ -126,8 +121,9 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    position: relative;
     left: 0;
-    top: -150px;
+    top: -120px;
     padding: 2%;
     line-height: 20px;
     background-color: rgba(200, 215, 236, 0.993);
@@ -410,10 +406,15 @@ footer .creater-info-board {
   src: url("/Oswald-VariableFont_wght.ttf");
 }
 
-body {
+html, body {
   font-size: 100%;
   font-family: oswald,sans-serif;
   line-height: 1.5rem;
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
 }
 
 .main-section {
@@ -1124,6 +1125,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: none;
+    background-color: #002064;
   }
   .info-about-company .heading {
     font-size: 25px;
@@ -1157,6 +1160,8 @@ body {
   .process-container {
     padding: 1%;
     height: auto;
+    background-image: none;
+    background-color: #002064;
   }
   .process-container .text-container > .right-container-heading {
     font-size: 30px;

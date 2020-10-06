@@ -5,10 +5,15 @@
   font-family: oswald;
   src: url("/Oswald-VariableFont_wght.ttf");
 }
-body {
+html,body {
   font-size: 100%;
   font-family: oswald,sans-serif;
   line-height: 1.5rem;
+  width:100%;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
 }
 @mixin flex($flexdirection, $position) {
   display: flex;
@@ -452,6 +457,8 @@ $secondary-bg-color:rgb(41, 41, 59);
   .info-about-company {
     @include flex(column, center);
     align-items: center;
+    background-image: none;
+    background-color: rgb(0, 32, 100);
     .heading {
       font-size: 25px;
     }
@@ -477,6 +484,8 @@ $secondary-bg-color:rgb(41, 41, 59);
   .process-container {
     padding: 1%;
     height: auto;
+    background-image: none;
+     background-color: rgb(0, 32, 100);
     .text-container {
       > .right-container-heading {
         font-size: 30px;
