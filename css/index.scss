@@ -205,16 +205,16 @@ $secondary-bg-color:rgb(41, 41, 59);
       background-color: white;
       color: black;
       width: 100%;
-      height: 250px;
+      height: auto;
+      padding: 5%;
       .box-content {
         width: 100%;
         padding: 2%;
-        line-height: 1.5rem;
         > p {
           padding: 2%;
           margin: 2% 3%;
           text-align: left;
-          line-height: 40px;
+          line-height: 30px;
         }
       }
       .btn-box {
@@ -300,12 +300,12 @@ $secondary-bg-color:rgb(41, 41, 59);
              -10px -10px 20px #202427;
     .upper-side{
       background-color: rgba(33, 22, 190, 0.986);
-      height: 90px;
+      height: auto;
       padding: 2%;
       margin: 0;
       >img{
         width: 90px;
-        height: 70px;
+        height: 80px;
         border-radius: 50%;
         display: block;
         margin:0 auto;
@@ -314,6 +314,7 @@ $secondary-bg-color:rgb(41, 41, 59);
     .lower-side{
       width: 100%;
       padding: 2%;
+      height: 300px;
       margin: 0;
       text-align: center;
       background-color:whitesmoke;
@@ -326,9 +327,9 @@ $secondary-bg-color:rgb(41, 41, 59);
       .content-box{
         width: 100%;
         font-weight: lighter;
-        color: rgba(41, 32, 32, 0.712);
-        padding: 2% 0;
-        line-height:30px;
+        padding: 2%;
+        line-height:normal;
+        text-align: left;
       }
       .stars-box{
         width: 100%;
@@ -412,7 +413,7 @@ $secondary-bg-color:rgb(41, 41, 59);
   .section-container {
     @include flex(row, center);
     align-items: center;
-    height: 30vh;
+    height: 50vh;
     width: 50%;
     .icons {
       margin: 2% 4%;
@@ -447,9 +448,9 @@ $secondary-bg-color:rgb(41, 41, 59);
       > .left-container-text {
         position: relative;
         top: 0%;
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
-        text-align: center;
+        padding: 5%;
       }
     }
   }
@@ -464,7 +465,7 @@ $secondary-bg-color:rgb(41, 41, 59);
     }
     .board-container {
       @include flex(column, center);
-      width: 70%;
+      width: 80%;
       border-radius: 10px;
       margin: 1%;
       .info-heading {
@@ -533,21 +534,21 @@ $secondary-bg-color:rgb(41, 41, 59);
     font-size: 20px;
   }
   .box {
-    width: 70%;
+    width: 80%;
     .uppersection {
       width: 100%;
       .box-heading {
-        font-size: 18px;
+        font-size: 22px;
       }
       .pricing-price {
-        font-size: 20px;
+        font-size: 21px;
       }
     }
     .lowersection {
       .box-content {
         > p {
           line-height: 30px;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }
@@ -571,7 +572,7 @@ $secondary-bg-color:rgb(41, 41, 59);
     }
   }
   .review-box{
-    width: 70%;
+    width: 80%;
     padding: 0;
     margin: 2% 0;
     justify-content: center;
@@ -587,10 +588,12 @@ $secondary-bg-color:rgb(41, 41, 59);
     }
     .lower-side{
       width: 100%;
+      height: auto;
       .content-box{
         width: 100%;
         font-size: 14px;
         color: black;
+        padding: 3%;
       }
     }
   }

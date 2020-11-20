@@ -24,6 +24,9 @@ footer{
             margin: 1%;
             ul>li{
                 list-style-type: none;
+                a:hover{
+                    color: yellow;
+                }
             }
         }
     }
@@ -32,12 +35,15 @@ footer{
          @include flex(row);
          justify-content: space-between;
     }
-    .creater-info-board{
-        display: block;
-        height: 20px;
-        text-align: center;
-    }
 }
+.creater-info-board{
+        background: #000;
+        display: block;
+        clear: both;
+        height: auto;
+        text-align: center;
+        color: white;
+    }
 @media only screen and (max-width:500px){
     footer{
         height: auto;
