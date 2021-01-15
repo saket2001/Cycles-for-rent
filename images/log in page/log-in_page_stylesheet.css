@@ -10,7 +10,7 @@
 }
 /*for laptop */
 body{
-    background-color: gray;
+        background-color: rgb(43, 43, 61);
 }
 /* nav css */
 .nav-container{
@@ -129,6 +129,9 @@ input[type=password]{
 }
 /* for mobile screen  */
 @media only screen and (max-width:500px){
+    body{
+        background-color: rgb(34, 34, 44);
+    }
     .nav-container{
         display:flex;
         flex-direction: column;

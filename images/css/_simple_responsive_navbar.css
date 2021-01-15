@@ -18,36 +18,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: lightblue;
+  background: rgba(136, 137, 138, 0.911);
   width: 100%;
   height: 100%;
+  border-bottom: 1px solid black;
 }
 
 .nav-container .logo {
   font-size: 25px;
-  margin: 1%;
+  color: white;
 }
 
-.nav-container .hover {
-  display: none;
-}
-
-.nav-container .dropdown {
-  width: 100%;
+.nav-container .nav-items {
   padding: 1%;
+  width: 50%;
   text-align: center;
 }
 
-.nav-container .dropdown-content .nav-links {
+.nav-container .nav-items a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
   padding: 1%;
-  color: black;
+  color: white;
 }
 
-.nav-container .dropdown-content .nav-links:hover {
+.nav-container .nav-items a:hover {
   border: 2px solid white;
+  border-radius: 10px;
 }
 
 /* for mobile devices */
@@ -61,54 +59,21 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-    height: 100%;
-  }
-  .nav-container .hover {
-    display: inline-block;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 1%;
-  }
-  .nav-container .dropdown {
-    width: auto;
-  }
-  .nav-container .dropdown-content {
-    padding: 1%;
-    display: none;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    background: lightblue;
-  }
-  .nav-container .dropdown:hover .dropdown-content {
-    margin-top: 1%;
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .nav-container .dropdown-content .nav-links {
     width: 100%;
-    font-size: 14px;
+    height: 100%;
   }
-  .nav-container .dropdown-content .nav-links:hover {
-    border: none;
-    -webkit-text-decoration: underline white;
-            text-decoration: underline white;
+  .nav-container .nav-items {
+    width: 100%;
+  }
+  .nav-container .nav-items a {
+    font-size: 12px;
+  }
+  .nav-container .nav-items a:hover {
+    border: 1px solid white;
   }
 }
 
@@ -138,4 +103,4 @@
     font-size: 10px;
   }
 }
-/*# sourceMappingURL=simple_dropdown_navbar.css.map */
+/*# sourceMappingURL=simple_responsive_navbar.css.map */
