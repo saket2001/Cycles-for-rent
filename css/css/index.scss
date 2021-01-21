@@ -1,0 +1,561 @@
+@import "header";
+@import "simple_responsive_navbar";
+@import "footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+html,
+body {
+  font-size: 100%;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+}
+@mixin flex($flexdirection, $position) {
+  display: flex;
+  flex-flow: $flexdirection wrap;
+  justify-content: $position;
+}
+@mixin heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+//
+$primary-bg-color: lightcyan;
+$bg-color: rgb(253, 249, 249);
+$secondary-bg-color: rgb(41, 41, 59);
+$box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
+//
+@mixin button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 200;
+  outline: none;
+  border: 1px solid lightseagreen;
+  &:hover {
+    background-color: #ffffffcb;
+    color: rgb(0, 0, 0);
+  }
+}
+//section1
+.about-us {
+  padding: 2%;
+  background: $primary-bg-color;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  .text-container {
+    display: flex;
+    flex-flow: row;
+    > .right-container-heading {
+      width: auto;
+      height: auto;
+      margin: 1% 4%;
+    }
+    > .left-container-text {
+      .heading {
+        @include heading();
+        width: auto;
+        text-align: left;
+        margin: 1% 0;
+      }
+      .small-text {
+        margin: 2% 0;
+        color: darkslategrey;
+      }
+      width: auto;
+      margin: 1% 4%;
+      padding: 2%;
+      font-size: 23px;
+      text-align: left;
+    }
+  }
+}
+
+// section2
+.info-about-company {
+  @include flex(row, center);
+  padding: 2%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  .heading {
+    @include heading();
+    color: black;
+    font-size: 50px;
+    margin: 4% 0;
+  }
+  .board-container {
+    @include flex(column, center);
+    width: 25%;
+    height: auto;
+    align-items: center;
+    padding: 1%;
+    background-color: $primary-bg-color;
+    color: black;
+    border-radius: 10px;
+    margin: 1%;
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+    .info-heading {
+      font-size: 32px;
+      margin: 2% 0;
+      width: 95%;
+      text-align: left;
+    }
+    .image img {
+      width: 150px;
+      height: 150px;
+      margin: 1% auto;
+    }
+    .section-text {
+      width: 100%;
+      margin: 1% auto;
+      font-size: 20px;
+      padding: 2% 4%;
+      color: darkslategrey;
+    }
+  }
+}
+//section 3
+
+// section 4
+.pricing-section-container {
+  @include flex(row, center);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5%;
+  .heading {
+    @include heading();
+    margin: 3% 0;
+    font-size: 50px;
+  }
+  .box {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 25%;
+    margin: 2% 1%;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid skyblue;
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+    .uppersection {
+      width: 100%;
+      margin: 2% 0;
+      .box-heading {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 4% 0;
+      }
+      .pricing-price {
+        font-size: 32px;
+        font-weight: 800;
+        padding: 4% 0;
+      }
+      .extra-price {
+        font-size: 16px;
+        padding: 4% 0;
+      }
+    }
+    .lowersection {
+      width: 100%;
+      height: auto;
+      padding: 2% 5%;
+      .box-content {
+        width: 100%;
+        > p {
+          padding: 4% 0;
+          margin: 2% 5%;
+          text-align: center;
+          line-height: 35px;
+        }
+      }
+      .btn-box {
+        width: 100%;
+        padding: 4% 0;
+        margin: 2% 0;
+        > button {
+          @include button();
+          padding: 2%;
+          border-radius: 20px;
+          border: none;
+          background-color: rgb(34, 183, 241);
+          color: white;
+          &:hover {
+            background-color: white;
+            border: 2px solid rgb(34, 183, 241);
+          }
+        }
+      }
+    }
+  }
+  #box2 {
+    background: rgb(34, 183, 241);
+    color: white;
+    button{
+      background-color: white;
+      color: black;
+        &:hover {
+            font-weight: bold;
+          }
+    }
+    
+  }
+}
+//section 5
+.review-section {
+  width: 100%;
+  height: 100%;
+  @include flex(row, center);
+  background-color: $primary-bg-color;
+  padding: 5% auto;
+  .review-heading {
+    width: 100%;
+    color: black;
+    .small-text {
+      @include heading();
+      font-size: smaller;
+      padding: 1%;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 18px;
+    }
+    .big-text {
+      @include heading();
+    }
+  }
+  .review-box {
+    @include flex(column, space-evenly);
+    width: 25%;
+    margin: 4% 2%;
+    height: auto;
+    padding: 0;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: $box-shadow;
+    .upper-side {
+      @include flex(row, flex-start);
+      align-items: center;
+      height: auto;
+      padding: 0 2%;
+      margin: 0;
+      > img {
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0 3%;
+      }
+      .name-box {
+        width: auto;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 0 3%;
+      }
+    }
+    .lower-side {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 2%;
+      margin: 0;
+      height: auto;
+      text-align: center;
+      padding-bottom: 5%;
+      .content-box {
+        width: 100%;
+        padding: 1% 2%;
+        text-align: left;
+        font-size: 17px;
+      }
+      .stars-box {
+        width: auto;
+        text-align: left;
+        padding: 1% 2%;
+        > .stars {
+          color: blue;
+        }
+        > .empty-stars {
+          color: #bfbfbf;
+        }
+      }
+    }
+  }
+}
+//section 6
+.contact-us-section {
+  @include flex(row, flex-start);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 2%;
+  padding-bottom: 4%;
+  background-color: $primary-bg-color;
+  color: whitesmoke;
+  .img-block {
+    width: auto;
+    height: auto;
+    padding: 3%;
+    @include flex(row, center);
+    align-items: center;
+    img {
+      padding: 2%;
+    }
+  }
+  .container {
+    @include flex(column, left);
+    width: auto;
+    color: black;
+    margin: 2% 5%;
+    padding: 3%;
+    .heading {
+      @include heading();
+      font-weight: 700;
+      width: auto;
+      text-align: left;
+      padding: 2%;
+      margin: 0;
+    }
+    p {
+      padding: 2%;
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+    }
+    > input[type="text"] {
+      margin: 1% 2%;
+      padding: 2%;
+      font-size: 20px;
+      width: 500px;
+      outline: blue;
+      border: 2px solid gainsboro;
+      border-radius: 10px;
+    }
+    > input[type="email"] {
+      margin: 1% 2%;
+      padding: 2%;
+      font-size: 20px;
+      width: 500px;
+      outline: blue;
+      border: 2px solid gainsboro;
+      border-radius: 10px;
+    }
+    > textarea {
+      margin: 1% 2%;
+      padding: 2%;
+      font-size: 20px;
+      outline: blue;
+      border: 2px solid gainsboro;
+      border-radius: 10px;
+    }
+    .btn{
+      width: 100%;
+      margin: 1% 2%;
+      button{
+          @include button();
+          border-radius: 10px;
+          border: 2px solid blue;
+          background-color: blue;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  //section1
+  .about-us {
+    @include flex(column, center);
+    .text-container {
+      display: flex;
+      flex-flow: column;
+      > .right-container-heading {
+        margin: 1% auto;
+      }
+      > .left-container-text {
+        width: 100%;
+        padding: 2% auto;
+        margin: 1% auto;
+        .heading {
+          font-size: 35px;
+          padding: 0 10%;
+          margin: 2% 0;
+        }
+        .small-text {
+          font-size: 23px;
+          padding: 0 10%;
+          margin: 2% 0;
+        }
+      }
+    }
+  }
+  //section2
+  .info-about-company {
+    @include flex(column, center);
+    align-items: center;
+    .heading {
+      font-size: 30px;
+      width: 100%;
+      text-align: center;
+      font-style: normal;
+      padding: 0 2%;
+    }
+    .board-container {
+      @include flex(column, center);
+      width: 80%;
+      border-radius: 15px;
+      margin: 2%;
+      .info-heading {
+        font-size: 26px;
+      }
+      .image img {
+        width: 180px;
+        height: 180px;
+      }
+      .section-text {
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+  // section 4
+  .pricing-section-container {
+    @include flex(column, center);
+    align-items: center;
+    .heading {
+      font-size: 30px;
+    }
+    .box {
+      width: 80%;
+      .uppersection {
+        width: 100%;
+        .box-heading {
+          font-size: 22px;
+        }
+        .pricing-price {
+          font-size: 21px;
+        }
+      }
+      .lowersection {
+        .box-content {
+          > p {
+            line-height: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  //section 5
+  .review-section {
+    width: 100%;
+    height: 100%;
+    padding: 3% auto;
+    @include flex(column, center);
+    .review-heading {
+      width: 100%;
+      margin: 3% auto;
+      .small-text {
+        @include heading();
+        width: 100%;
+        font-size: 20px;
+      }
+      .big-text {
+        @include heading();
+        font-size: 35px;
+      }
+    }
+    .review-box {
+      width: 80%;
+      margin: 3% auto;
+      .upper-side {
+        > img {
+          width: 80px;
+          height: 60px;
+        }
+        .name-box {
+          font-size: 22px;
+        }
+      }
+      .lower-side {
+        .content-box {
+          font-size: 16px;
+          color: black;
+        }
+      }
+    }
+  }
+  .contact-us-section {
+    padding: 3%;
+    justify-content: center;
+    .heading {
+      font-size: 15px;
+      text-align: center;
+      padding: 1% 2%;
+    }
+    .img-block {
+      align-items: center;
+      img {
+        width: 200px;
+        height: 200px;
+        padding: 2%;
+      }
+    }
+    .container {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      padding: 2% auto;
+      margin: 1%;
+      align-items: center;
+      p {
+        padding: 2%;
+        width: 100%;
+        font-size: 17px;
+      }
+      > input[type="text"] {
+        padding: 2%;
+        font-size: 18px;
+        width: 240px;
+      }
+      > input[type="email"] {
+        padding: 2%;
+        font-size: 18px;
+        width: 240px;
+      }
+      > textarea {
+        padding: 2%;
+        font-size: 18px;
+        width: 240px;
+        height: 100px;
+      }
+      .btn{
+        margin: 2%;
+      button{
+          font-weight: 500;
+          font-size: 18px;
+          padding: 1%;
+          height: 35px;
+      }
+    }
+    }
+  }
+}

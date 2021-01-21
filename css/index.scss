@@ -85,7 +85,7 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
 
 // section2
 .info-about-company {
-  @include flex(row, space-evenly);
+  @include flex(row, center);
   padding: 2%;
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -100,10 +100,11 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
     width: 25%;
     height: auto;
     align-items: center;
-    padding: 1% 3%;
+    padding: 1%;
     background-color: $primary-bg-color;
     color: black;
     border-radius: 10px;
+    margin: 1%;
     &:hover {
       box-shadow: $box-shadow;
     }
@@ -145,7 +146,7 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
     flex-flow: column wrap;
     align-items: center;
     width: 25%;
-    margin: 2%;
+    margin: 2% 1%;
     text-align: center;
     color: black;
     border-radius: 15px;
@@ -194,11 +195,11 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
           padding: 2%;
           border-radius: 20px;
           border: none;
-          background-color: cyan;
-          color: blue;
+          background-color: rgb(34, 183, 241);
+          color: white;
           &:hover {
             background-color: white;
-            border: 2px solid cyan;
+            border: 2px solid rgb(34, 183, 241);
           }
         }
       }
@@ -207,6 +208,14 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
   #box2 {
     background: rgb(34, 183, 241);
     color: white;
+    button{
+      background-color: white;
+      color: black;
+        &:hover {
+            font-weight: bold;
+          }
+    }
+    
   }
 }
 //section 5
@@ -216,7 +225,7 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
   @include flex(row, center);
   background-color: $primary-bg-color;
   padding: 5% auto;
-  .heading {
+  .review-heading {
     width: 100%;
     color: black;
     .small-text {
@@ -461,7 +470,7 @@ $box-shadow: 7px 7px 14px #e0e0e0, -7px -7px 14px #ffffff;
     height: 100%;
     padding: 3% auto;
     @include flex(column, center);
-    .heading {
+    .review-heading {
       width: 100%;
       margin: 3% auto;
       .small-text {

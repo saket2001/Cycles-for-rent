@@ -97,7 +97,7 @@
   text-transform: uppercase;
   background-color: transparent;
   text-decoration: none;
-  border: 3px solid red;
+  border: 2px solid blue;
   outline: none;
   padding: 2%;
   border-radius: 10px;
@@ -105,7 +105,7 @@
 }
 
 .header .welcome-page .welcome-container .welcome-btn-group .welcome-btn:hover {
-  background-color: #ff0606;
+  background-color: blue;
 }
 
 .header .welcome-page .welcome-container .welcome-btn-group .welcome-btn:hover a {
@@ -248,7 +248,7 @@
 }
 
 .nav-container .nav-items a:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid blue;
 }
 
 /* for mobile devices */
@@ -489,9 +489,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2%;
   width: 100%;
   background-color: white;
@@ -526,10 +526,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1% 3%;
+  padding: 1%;
   background-color: lightcyan;
   color: black;
   border-radius: 10px;
+  margin: 1%;
 }
 
 .info-about-company .board-container:hover {
@@ -598,7 +599,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 25%;
-  margin: 2%;
+  margin: 2% 1%;
   text-align: center;
   color: black;
   border-radius: 15px;
@@ -667,8 +668,8 @@ body {
   padding: 2%;
   border-radius: 20px;
   border: none;
-  background-color: cyan;
-  color: blue;
+  background-color: #22b7f1;
+  color: white;
 }
 
 .pricing-section-container .box .lowersection .btn-box > button:hover {
@@ -678,12 +679,21 @@ body {
 
 .pricing-section-container .box .lowersection .btn-box > button:hover {
   background-color: white;
-  border: 2px solid cyan;
+  border: 2px solid #22b7f1;
 }
 
 .pricing-section-container #box2 {
   background: #22b7f1;
   color: white;
+}
+
+.pricing-section-container #box2 button {
+  background-color: white;
+  color: black;
+}
+
+.pricing-section-container #box2 button:hover {
+  font-weight: bold;
 }
 
 .review-section {
@@ -703,12 +713,12 @@ body {
   padding: 5% auto;
 }
 
-.review-section .heading {
+.review-section .review-heading {
   width: 100%;
   color: black;
 }
 
-.review-section .heading .small-text {
+.review-section .review-heading .small-text {
   display: block;
   width: 100%;
   text-align: center;
@@ -723,7 +733,7 @@ body {
   font-size: 18px;
 }
 
-.review-section .heading .big-text {
+.review-section .review-heading .big-text {
   display: block;
   width: 100%;
   text-align: center;
@@ -1099,11 +1109,11 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .review-section .heading {
+  .review-section .review-heading {
     width: 100%;
     margin: 3% auto;
   }
-  .review-section .heading .small-text {
+  .review-section .review-heading .small-text {
     display: block;
     width: 100%;
     text-align: center;
@@ -1114,7 +1124,7 @@ body {
     width: 100%;
     font-size: 20px;
   }
-  .review-section .heading .big-text {
+  .review-section .review-heading .big-text {
     display: block;
     width: 100%;
     text-align: center;
